@@ -1,0 +1,93 @@
+/* @theme test */
+
+@import 'default';
+
+/* デフォルトテーマのh1スタイルをリセット */
+section.title h1,
+section.title h1:first-child {
+  all: unset;
+}
+
+/* ===== 全体 ===== */
+body {
+  background-color: #ffffff;
+  color: #222;
+}
+
+section {
+  font-family: 'Arial', 'Hiragino Maru Gothic ProN', sans-serif;
+  font-size: 32px;
+  padding: 40px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background: #00ff00 !important; /* テスト用：緑色に変更 */
+  border: 5px solid #ff0000 !important; /* テスト用：赤い枠線を追加 */
+}
+
+/* ===== タイトルスライド ===== */
+section.title {
+  background: #ff6b6b !important; /* テスト用：赤色に変更 */
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+  border: 10px solid #000000 !important; /* テスト用：黒い枠線を追加 */
+}
+
+section.title h1 {
+  color: rgb(0, 0, 0) !important;
+  font-family: 'Arial', 'Hiragino Kaku Gothic ProN' !important;
+  font-size: 100px !important;
+  text-align: center !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* ===== 通常スライド ===== */
+section.slides h1 {
+  font-size: 60px;
+  font-family: 'Arial', 'Hiragino Kaku Gothic ProN';
+  color: #4a2cc6;
+}
+
+section.slides h2 {
+  font-size: 50px;
+  color: #0077cc;
+}
+section.slides h3 {
+    font-size: 40px;
+    color: #0077cc;
+}
+section.slides h4 {
+    font-size: 35px;
+    color: #0077cc;
+}
+
+/* ===== リスト ===== */
+section ul,
+section ol {
+  font-size: 50px;
+}
+
+section li::marker {
+  color: #4a2cc6;
+}
+
+/* ===== 画像 ===== */
+section img {
+  max-width: 80%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== フッター ===== */
+section::after {
+  content: '大阪成蹊大学 デジタルサークル';
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  font-size: 15px;
+  color: #403636;
+}
